@@ -1,6 +1,5 @@
 class StringUtils:
 
-
     def capitalize(self, string: str) -> str:
 
         return string.capitalize()
