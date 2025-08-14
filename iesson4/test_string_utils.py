@@ -8,7 +8,7 @@ string_utils = StringUtils()
 @pytest.mark.positive
 @pytest.mark.parametrize("input_str, expected", [
     ("skypro", "Skypro"),
-    ("hello world", "Hello world"),
+    ("hello worlds", "Hello worlds"),
     ("python", "Python"),
     ("123", "123"),
     ("04 апреля 2023", "04 апреля 2023")
