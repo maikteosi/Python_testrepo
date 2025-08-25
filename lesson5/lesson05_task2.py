@@ -10,15 +10,24 @@ driver = webdriver.Chrome(
 driver.get("http://uitestingplayground.com/dynamicid")
 sleep(2)
 
+button = driver.find_element(By.CLASS_NAME, "btn-primary")
+print("Кликаем на синюю кнопку #1...")
+button.click()
+print("Клик выполнен успешно!")
+sleep(2)
 
-for i in range(3):
-    button = driver.find_element(By.CLASS_NAME, "btn-primary")
-    print(f"Кликаем на синюю кнопку #{i + 1}...")
-    button.click()
-    print("Клик выполнен успешно!")
-    sleep(2)
+button = driver.find_element(By.CLASS_NAME, "btn-primary")
+print("Кликаем на синюю кнопку #2...")
+button.click()
+print("Клик выполнен успешно!")
+sleep(2)
 
-# Закрываем браузер после всех кликов
+button = driver.find_element(By.CLASS_NAME, "btn-primary")
+print("Кликаем на синюю кнопку #3...")
+button.click()
+print("Клик выполнен успешно!")
+sleep(2)
+
 driver.quit()
 sleep(1)
 
